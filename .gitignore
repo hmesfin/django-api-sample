@@ -278,3 +278,4 @@ apps/media/
 .ipython/
 .env
 .envs/*
+.gcp/*
