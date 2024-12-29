@@ -21,7 +21,13 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = env.list(
     "DJANGO_ALLOWED_HOSTS",
-    default=["sample-api.gojjoapps.com", "localhost:8000", "127.0.0.1:8000"],
+    default=["sample-api.gojjoapps.com"],
+)
+
+# CORS
+# ------------------------------------------------------------------------------
+CORS_ORIGIN_WHITELIST = env.list(
+    "DJANGO_CORS_ORIGIN_WHITELIST",
 )
 
 # DATABASES
