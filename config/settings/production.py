@@ -26,12 +26,11 @@ ALLOWED_HOSTS = env.list(
 
 # CORS
 # ------------------------------------------------------------------------------
-CORS_ORIGIN_WHITELIST = env.list(
-    "DJANGO_CORS_ORIGIN_WHITELIST",
-)
-
-CORS_ALLOWED_ORIGINS = env.list(
-    "DJANGO_CORS_ORIGIN_WHITELIST",
+CORS_ALLOWED_ORIGINS = (
+    "https://sample-api.gojjoapps.com",
+    "http://localhost:3000",
+    "http://localhost:8000",
+    "http://localhost:5173",
 )
 
 # DATABASES
