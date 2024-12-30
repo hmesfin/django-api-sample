@@ -30,6 +30,10 @@ CORS_ORIGIN_WHITELIST = env.list(
     "DJANGO_CORS_ORIGIN_WHITELIST",
 )
 
+CORS_ALLOWED_ORIGINS = env.list(
+    "DJANGO_CORS_ORIGIN_WHITELIST",
+)
+
 # DATABASES
 # ------------------------------------------------------------------------------
 DATABASES["default"]["CONN_MAX_AGE"] = env.int("CONN_MAX_AGE", default=60)
